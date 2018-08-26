@@ -3,8 +3,8 @@
 gg.alert(os.date([[
 ❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
 
-Today: %Y/%m/%d Time: %H:%M:%S
-www.youtube.com/c/PUBGMCorner
+     Today: %Y/%m/%d Time: %H:%M:%S
+      www.youtube.com/c/PUBGMCorner
 
 ❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
 ]]))
@@ -14,7 +14,7 @@ gg.alert([[
 ❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
 
 
- 🛡️PLEASE ENTER YOUR SECRET PASSWORD🛡️
+🛡️PLEASE ENTER YOUR SECRET PASSWORD🛡️
 
 
 ❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
@@ -29,7 +29,7 @@ prompt = gg.prompt({
   [1] = "number"
 })
 function right()
-  gg.alert("️🛡️  VERIFIED!  🛡️⚔️")
+  gg.alert("️⚔️🛡️  VERIFIED!  🛡️⚔️")
 end
 function wrong()
   gg.alert("❌  REJECTED  ❌!")
