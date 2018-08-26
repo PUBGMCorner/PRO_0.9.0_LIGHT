@@ -3,8 +3,8 @@
 gg.alert(os.date([[
 ❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
 
-     Today: %Y/%m/%d Time: %H:%M:%S
-      www.youtube.com/c/PUBGMCorner
+Today: %Y/%m/%d Time: %H:%M:%S
+www.youtube.com/c/PUBGMCorner
 
 ❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
 ]]))
