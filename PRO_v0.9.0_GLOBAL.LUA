@@ -14,7 +14,7 @@ gg.alert([[
 ❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
 
 
-  🛡️PLEASE ENTER YOUR SECRET PASSWORD🛡️
+ 🛡️PLEASE ENTER YOUR SECRET PASSWORD🛡️
 
 
 ❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
