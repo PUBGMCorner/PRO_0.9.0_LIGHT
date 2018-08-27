@@ -333,7 +333,7 @@ gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("0;7.0064923e-45;1;100;1;2,500,000,000.0;0.10000000149;88", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(100)
-gg.editAll("0.7", gg.TYPE_FLOAT)
+gg.editAll("1.6", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.toast("Micro Speedhack Activated!")
 end
