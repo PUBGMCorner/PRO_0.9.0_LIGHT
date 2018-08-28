@@ -48,10 +48,10 @@ function HOME()
 	"🔴 ONE CLICK LANDED 🔴",
 	"🔘 HEADSHOT 1C LOBBY 🔘",
 	"⭕ BARBAR 1C LOBBY ⭕",
-    "🔹 FIRING RATE AKM 🔹",
-    "🔹 FIRING RATE M416 🔹",
+        "🔹 FIRING RATE AKM 🔹",
+        "🔹 FIRING RATE M416 🔹",
 	"🔹 FIRING RATE SCAR-L 🔹",
-	"🔸 OPEN SIT SCOPE🔸",
+	"🔸 OFF SIT SCOPE 🔸",
 	"🔸 WALSHOT NEW AKM 🔸",
 	"🔺 SPEED HACK 🔺",
 	"🔷 JEEP SPEED+SUBMARINE 🔷",
@@ -172,7 +172,7 @@ function OCL()
   gg.searchNumber("1,092,081,726;1,003,658,240;923,795,456", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
   gg.searchNumber("1,092,081,726", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
   gg.getResults(100)
-  gg.editAll("1,135,081,726", gg.TYPE_DWORD)
+  gg.editAll("1,150,081,726", gg.TYPE_DWORD)
   gg.clearResults()
   gg.toast("Sit On Scope Activated")  
 end
@@ -316,15 +316,15 @@ gg.editAll("0.02800000022", gg.TYPE_FLOAT)
 gg.toast('Speed SCAR-L Activated')
 end
 
-function ON()
+function OFF()
   gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("1,092,081,726;1,003,658,240;923,795,456", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("1,092,081,726", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("1,150,081,726;1,003,658,240;923,795,456", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("1,150,081,726", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
   gg.getResults(100)
-  gg.editAll("1,135,081,726", gg.TYPE_DWORD)
+  gg.editAll("1,092,081,726", gg.TYPE_DWORD)
   gg.clearResults()
-  gg.toast("Sit On Scope Activated")
+  gg.toast("Sit On Scope Turned Off")
 end
 function WALL()
   gg.clearResults()
