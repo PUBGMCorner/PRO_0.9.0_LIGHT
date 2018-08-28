@@ -344,7 +344,9 @@ gg.searchNumber('1;1;1;0.0001;20;0.0005;0.4::50', gg.TYPE_FLOAT, false, gg.SIGN_
 gg.searchNumber('1', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(500)
 gg.editAll('1.04', gg.TYPE_FLOAT)
+gg.toast("Fast Speed Activated")
 gg.clearResults()
+end
 
 function JEEP()
   gg.clearResults()
