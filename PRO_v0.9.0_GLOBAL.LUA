@@ -239,7 +239,6 @@ function B1CL()
   gg.getResults(500)
   gg.editAll('86', gg.TYPE_FLOAT)
   gg.clearResults()
-  gg.toast
   gg.toast("Magic Bullet Barbar Activated")
   
   gg.clearResults()
