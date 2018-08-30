@@ -18,7 +18,7 @@ gg.alert([[
 
 ❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
 ]])
-pass = "FrEE"
+pass = "EWEX"
 prompt = gg.prompt({
   " ⚔️🛡️ PLEASE ENTER VVIP ID 🛡️⚔️"
 }, {
