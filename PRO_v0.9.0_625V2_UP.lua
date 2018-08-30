@@ -1,5 +1,5 @@
 
-  gg.clearRgg.alert(os.date([[
+gg.alert(os.date([[
 ❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
 
 Today: %Y/%m/%d Time: %H:%M:%S
