@@ -73,9 +73,9 @@ function HOME()
     "☎️ CONTACT US ☎️"
   }, nil, [[
 ❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
-                   💠 PUBGMS V 0.9.0 LIGHT 💠
+                   💠 PUBGMS V 0.9.1 LIGHT 💠
        🇮🇩 MODED BY : @KopralDjonoPUBGMC 🇮🇩
-        💠 PRO VERSION SNAPDRAGON 410/425 💠
+        💠 PRO VERSION SNAPDRAGON 410-425 💠
 ❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌ ]])
   if HM == nil then
   else
