@@ -75,7 +75,7 @@ function HOME()
 ❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
                    💠 PUBGMS V 0.9.1 LIGHT 💠
        🇮🇩 MODED BY : @KopralDjonoPUBGMC 🇮🇩
-        💠 PRO VERSION SNAPDRAGON 625 💠
+        💠 PRO VERSION SNAPDRAGON GLOBAL 💠
 ❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌ ]])
   if HM == nil then
   else
