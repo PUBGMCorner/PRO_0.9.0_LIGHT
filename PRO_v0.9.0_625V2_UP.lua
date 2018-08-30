@@ -44,11 +44,11 @@ gg.alert([[
 	
 ❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
 
-             🛡️BIG UPDATE PRO 0.9.1🛡️
+                🛡️BIG UPDATE PRO 0.9.1🛡️
 	
-          🛡️READ INFO & UPDATE LOG🛡️
+             🛡️READ INFO & UPDATE LOG🛡️
 	
-            ( BACA INFO & UPDATE LOG )
+               ( BACA INFO & UPDATE LOG )
 	
 ❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
 ]])
