@@ -39,6 +39,19 @@ else
 end
 HOME = 1
 
+gg.alert([[
+	
+❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
+
+   🛡️BIG UPDATE PRO 0.9.1🛡️
+	
+  🛡️READ INFO & UPDATE LOG🛡️
+	
+  ( BACA INFO & UPDATE LOG )
+	
+❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
+]])
+
 function HOME()
     HM = gg.multiChoice({
 	"🔴 ONE CLICK LANDED 🔴",
@@ -153,6 +166,15 @@ function OCL()
   gg.toast("Body Green Activated")
 
   gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("1,092,081,726;1,003,658,240;923,795,456", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("1,092,081,726", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(50)
+  gg.editAll("1,135,081,726", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.toast("Sit On Scope Activated")  
+	
+  gg.clearResults()
   gg.setRanges(gg.REGION_BAD)
   gg.clearResults()
   gg.searchNumber("100F;1F;1,008,981,770D:99", gg.TYPE_FLOAT, false, gg.SING_EQUAL, 0, -1)
@@ -162,17 +184,6 @@ function OCL()
   gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
   gg.toast("Dark Sky Activated")
-
-
-  
-gg.clearResults()
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("1,092,081,726;1,003,658,240;923,795,456", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("1,092,081,726", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(50)
-gg.editAll("1,135,081,726", gg.TYPE_DWORD)
-gg.clearResults()
-  gg.toast("Sit On Scope Activated")  
 end
 
 
@@ -214,7 +225,7 @@ function H1CL()
   gg.getResults(100)
   gg.editAll("0.07", gg.TYPE_FLOAT)
   gg.clearResults()
-  gg.toast("New Headshot 95% ACtivated")
+  gg.toast("New Headshot 90% ACtivated")
   
   gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
@@ -412,7 +423,6 @@ ONE CLICK LANDED :
 - BODY GREEN
 - ON SIT SCOPE
 - BLACK SKY
-- ON SIT SCOPE
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 ❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
