@@ -64,8 +64,8 @@ function HOME()
 	"🔹 FIRING RATE ALL SMG 🔹",
 	"🔸 OFF SIT SCOPE 🔸",
 	"🔸 WALSHOT NEW AKM 🔸",
-	"🔺 SPEED HACK LOBBY 🔺",
-	"🔺 OFF SPEED HACK LOBBY 🔺",
+	"🔺 SPEED HACK 🔺",
+	"🔺 OFF SPEED HACK 🔺",
 	"🔷 JEEP SPEED+SUBMARINE 🔷",
 	"🔹 SMALL CROSS HAIR 🔹",
 	"ℹ️ Info & Update Log ℹ️",
@@ -344,7 +344,7 @@ function SPEED()
   gg.searchNumber("1,120,403,456D;1.0F;1,040,187,392D::45", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.getResults(20)
-  gg.editAll("1.4", gg.TYPE_FLOAT)
+  gg.editAll("2", gg.TYPE_FLOAT)
   gg.clearResults()
   gg.toast("Speed Hack Activated")
 end
@@ -352,10 +352,10 @@ end
 function OFFSPEED()
   gg.setRanges(gg.REGION_ANONYMOUS)
   gg.clearResults()
-  gg.searchNumber("1,120,403,456D;1.4F;1,040,187,392D::45", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("1,120,403,456D;2F;1,040,187,392D::45", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.searchNumber("1.4", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.getResults(20)
-  gg.editAll("1", gg.TYPE_FLOAT)
+  gg.editAll("2", gg.TYPE_FLOAT)
   gg.clearResults()
   gg.toast("Speed Hack De-Activated")
 end
