@@ -786,8 +786,7 @@ gg.alert([[
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
   ]])
   
-
-end  
+ 
 function MC()
   KR = gg.choice({
     "💠 Telegram  : @PUBGMSCRIPT",
