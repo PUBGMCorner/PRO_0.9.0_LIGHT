@@ -1,5 +1,4 @@
 
-
 gg.alert(os.date([[
 ❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
 
@@ -10,29 +9,28 @@ www.youtube.com/c/PUBGMCorner
 ]]))
 
 gg.alert([[
-
+	
 ❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
 
 
-🛡️PLEASE ENTER YOUR SECRET PASSWORD🛡️
+  🛡️PLEASE ENTER YOUR SECRET FREE ID🛡️
 
 
 ❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
-
 ]])
 pass = "FrEE"
 prompt = gg.prompt({
-  "⚔️🛡️ PLEASE ENTER PASSWORD 🛡️⚔️"
+  " ⚔️🛡️ PLEASE ENTER VVIP ID 🛡️⚔️"
 }, {
   [1] = 0
 }, {
   [1] = "number"
 })
 function right()
-  gg.alert("️⚔️🛡️  VERIFIED!  🛡️⚔️")
+  gg.alert("⚔️🛡️  VERIFIED!  🛡️⚔️")
 end
 function wrong()
-  gg.alert("❌  REJECTED  ❌!")
+  gg.alert("❌  REJECTED  ❌")
   os.exit()
 end
 if prompt[1] == pass then
@@ -42,17 +40,32 @@ else
 end
 HOME = 1
 
+gg.alert([[
+	
+❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
+
+                🛡️BIG UPDATE PRO 0.9.1🛡️
+	
+             🛡️READ INFO & UPDATE LOG🛡️
+	
+               ( BACA INFO & UPDATE LOG )
+	
+❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
+]])
+
 function HOME()
     HM = gg.multiChoice({
 	"🔴 ONE CLICK LANDED 🔴",
 	"🔘 HEADSHOT 1C LOBBY 🔘",
 	"⭕ BARBAR 1C LOBBY ⭕",
-    "🔹 FIRING RATE AKM 🔹",
-    "🔹 FIRING RATE M416 🔹",
+        "🔹 FIRING RATE AKM 🔹",
+        "🔹 FIRING RATE M416 🔹",
 	"🔹 FIRING RATE SCAR-L 🔹",
-	"🔸 OPEN SIT SCOPE🔸",
+	"🔹 FIRING RATE ALL SMG 🔹",
 	"🔸 OFF SIT SCOPE 🔸",
-	"🔺 SPEED HACK 🔺",
+	"🔸 WALSHOT NEW AKM 🔸",
+	"🔺 SPEED HACK LOBBY 🔺",
+	"🔺 OFF SPEED HACK LOBBY 🔺",
 	"🔷 JEEP SPEED+SUBMARINE 🔷",
 	"🔹 SMALL CROSS HAIR 🔹",
 	"ℹ️ Info & Update Log ℹ️",
@@ -84,33 +97,40 @@ function HOME()
     if HM[6] == true then
     FSC()
   end
-  if HM[7] == true then
-    ON()
+    if HM[7] == true then
+    FSMG()
   end
   if HM[8] == true then
-	OFF()
+    ON()
   end
   if HM[9] == true then
+	WALL()
+  end
+  if HM[10] == true then
    SPEED()
    end
-  if HM[10] == true then
+   if HM[11] == true then
+   OFFSPEED()
+   end
+  if HM[12] == true then
    JEEP()
   end  
-   if HM[11] == true then
+   if HM[13] == true then
    CROSS()
   end
-  if HM[12] == true then
+  if HM[14] == true then
     INFO()
   end
-  if HM[13] == true then
+  if HM[15] == true then
     EXIT()
   end
-  if HM[14] == true then
+  if HM[16] == true then
     MC()
   end
   HOMEDM = -1
     end
   end
+
 
 function OCL()
   gg.clearResults()
@@ -140,6 +160,24 @@ function OCL()
   gg.toast("Body Green Aktif")
 
   gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("1,092,081,726;1,003,658,240;923,795,456", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("1,092,081,726", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("1,135,081,726", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.toast("Sit On Scope Activated") 
+  
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.clearResults()
+  gg.searchNumber("8.0F;1.20000004768F;0.80000001192F;1.5F;0.80000001192F;1.5F:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("8", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("0", gg.TYPE_FLOAT)
+  gg.toast("No Grass Activated")
+  
+  
+  gg.clearResults()
   gg.setRanges(gg.REGION_BAD)
   gg.clearResults()
   gg.searchNumber("100F;1F;1,008,981,770D:99", gg.TYPE_FLOAT, false, gg.SING_EQUAL, 0, -1)
@@ -150,23 +188,7 @@ function OCL()
   gg.setRanges(gg.REGION_ANONYMOUS)
   gg.toast("Dark Sky Activated")
 
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.clearResults()
-  gg.searchNumber("8.0F;1.20000004768F;0.80000001192F;1.5F;0.80000001192F;1.5F:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("8", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(100)
-  gg.editAll("0", gg.TYPE_FLOAT)
-  gg.toast("No Grass Activated")
-	
 
-  gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("1,092,081,726;1,003,658,240;923,795,456", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("1,092,081,726", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(100)
-  gg.editAll("1,135,081,726", gg.TYPE_DWORD)
-  gg.clearResults()
-  gg.toast("Sit On Scope Activated")  
 end
 
 
@@ -185,31 +207,37 @@ function H1CL()
   gg.clearResults()
   gg.toast("No Recoil All Gun Activated")
   
+ gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("-88.66608428955;26:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("26", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(2)
+  gg.editAll("-460", gg.TYPE_FLOAT)
   gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("12.66705417633;28;15;26:5120", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(10)
-  gg.editAll("330", gg.TYPE_FLOAT)
+  gg.searchNumber("-88.73961639404;28:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(2)
+  gg.editAll("-560", gg.TYPE_FLOAT)
   gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
   gg.searchNumber("9.201618;30.5;25", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.getResults(10)
-  gg.editAll("1500", gg.TYPE_FLOAT)
+  gg.editAll("999", gg.TYPE_FLOAT)
   gg.clearResults()
-  gg.toast("HEADSHOT 75%% Activated")
-  
- gg.toast("AIMBOT HEAD IS WORKING...")
- gg.clearResults()
- gg.setRanges(32)
- gg.searchNumber("3.5;1;200;20::999", 16, false, 536870912, 0, -1)
- gg.searchNumber("3.5;1;200;20", 16, false, 536870912, 0, -1)
- gg.getResults(400)
- gg.editAll("-1.0e10", 16)
- gg.setRanges(32)
- gg.clearResults()
- gg.toast("Aimbot Head Activated")
-  
+  gg.setRanges(gg.REGION_C_BSS)
+  gg.searchNumber("2048D;1F", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("0.07", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("1F;-8.6457681e12F;15F;28F;16F;26F;8F;18F:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("15.0F;28.0F;16.0F;26.0F;8.0F;18.0F:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(500)
+  gg.editAll("70", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("New MAGIC BULLET HEADSHOT 90% ACtivated")
 end
   
 function B1CL()
@@ -226,14 +254,14 @@ function B1CL()
   gg.clearResults()
   gg.toast("No Recoil All Gun Activated")
   
-  gg.setRanges(32)
+ gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber('90.77570343018F;8.0F:512', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber('8', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("1F;-8.6457681e12F;15F;28F;16F;26F;8F;18F:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("15.0F;28.0F;16.0F;26.0F;8.0F;18.0F:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.getResults(500)
-  gg.editAll('86', gg.TYPE_FLOAT)
+  gg.editAll("65", gg.TYPE_FLOAT)
   gg.clearResults()
-  gg.toast("Magic Bullet Barbar Activated")
+ gg.toast("Magic Bullet Pro Activated")
   
   gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
@@ -251,20 +279,7 @@ function B1CL()
   gg.toast("Average Aimbot Activated")
   gg.toast("PUBG Mobile Script")
   
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("-88.66608428955;26:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("26", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(800)
-  gg.editAll("460", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.searchNumber("-88.73961639404;28:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(800)
-  gg.editAll("560", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("Aim Lock Activated")
-  gg.toast("PUBG Mobile Script")
+
 end
 
 function FAKM()
@@ -293,17 +308,17 @@ gg.getResults(50)
 gg.editAll("0.02800000022", gg.TYPE_FLOAT)
 gg.toast('Speed SCAR-L Activated')
 end
-
-function ON()
+function FSMG()
+  gg.toast("Coding Firing Rate All SMG. . .")
   gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("1,092,081,726;1,003,658,240;923,795,456", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("1,092,081,726", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(100)
-  gg.editAll("1,150,081,726", gg.TYPE_DWORD)
+  gg.searchNumber("40000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(800)
+  gg.editAll("500000", gg.TYPE_FLOAT)
   gg.clearResults()
-  gg.toast("Sit On Scope Activated")
+  gg.toast("Firing Rate ALL SMG Activated")
 end
+
 function OFF()
   gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
@@ -314,14 +329,39 @@ function OFF()
   gg.clearResults()
   gg.toast("Sit On Scope Turned Off")
 end
+function WALL()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_BSS)
+  gg.clearResults()
+  gg.searchNumber("869,711,765D;2;1::55", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(2)
+  gg.editAll("-10", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("Neo WallShot Activated")
+  gg.clearResults()
+end
+
 function SPEED()
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber('1;1;1;0.0001;20;0.0005;0.4::50', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber('1', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(500)
-gg.editAll('1.2', gg.TYPE_FLOAT)
-gg.clearResults()
-gg.toast("Micro Speedhack Activated!")
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.clearResults()
+  gg.searchNumber("1,120,403,456D;1.0F;1,040,187,392D::45", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(20)
+  gg.editAll("1.4", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("Speed Hack Activated")
+end
+
+function OFFSPEED()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.clearResults()
+  gg.searchNumber("1,120,403,456D;1.4F;1,040,187,392D::45", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("1.4", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(20)
+  gg.editAll("1", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("Speed Hack De-Activated")
 end
 
 function JEEP()
@@ -353,7 +393,7 @@ end
 
 function INFO()
 gg.alert([[
-❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
+	❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
 	
        ⚠️ DON'T COMBINE MAGIC BULLET ⚠️
 
@@ -366,7 +406,7 @@ gg.alert([[
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 ❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
-PERFECK NO RECOIL ALL WEAPON :
+PERFECT NO RECOIL ALL WEAPON :
 - DON'T HOLD WEAPON IN LOBBY
 - OR JUST HOLD A PAN
 - DON'T JOIN A ROOM WHILE ACTIVATING
@@ -384,9 +424,8 @@ PERFECK NO RECOIL ALL WEAPON :
 ONE CLICK LANDED :
 - WH SD GLOBAL
 - BODY GREEN
-- BLACK SKY
-- NO GRASS 
 - ON SIT SCOPE
+- BLACK SKY
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 ❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
@@ -398,16 +437,17 @@ ONE CLICK LANDED :
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 ONE CLICK HEADSHOT LOBBY :
 - NO RECOIL
-- AUTO HEADSHOT 75%
+- MAGIC BULLET HEADSHOT 90%
 - AIMBOT HEAD
+(NOW HEADSHOT 90% HAS MAGIC BULLET EFFECT TOO )
+(I'VE COMBINE MAGIC BULLET CODE WITH HEADSHOT CODE)
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 ❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 ONE CLICK BARBAR LOBBY :
 - NO RECOIL
-- MAGIC BULLET PRO
+- MAGIC BULLET PRO V[2]
 - AVERAGE AIMBOT
-- AIM LOCK
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 ❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
@@ -417,20 +457,35 @@ gg.alert([[
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 ❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
-1.NEW CODE
-2.MORE FAST SEARCH!
-3.MEMORY RANGES AUTO SELECTOR 
+1.NEW CODE MAGIC BULLET HEADSHOT!
+2.NEW CODE MAGIC BULLET PRO V[2]
+3.NEW CODE SPEED HACK
 4.RE-COMBINE ONE CLICK LANDED
 5.FIXED NO RECOIL ALL GUNS!
-6.NEW USER INTERFACE , MORE FRESH!
+6.ADDED WALLSHOT (AKM BEST)
 7.ADDED OFF SIT SCOPE
+8.ADDED FIRING RATE SMG
+9.ADDED OFF SPEED HACK
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+  ]])
+
+gg.alert([[
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+FREE DONATION FOR CONTINUING MY WORK
+TELKOMSEL CARRIER : +62 823 3213 9274
+PAYPAL : paypal.com/psanggara
+BANK : CONTACT ME
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 ❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
   ]])
   
 
-end   
+end  
 function MC()
   KR = gg.choice({
     "💠 Telegram  : @PUBGMSCRIPT",
