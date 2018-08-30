@@ -226,13 +226,6 @@ function H1CL()
   gg.getResults(100)
   gg.editAll("0.07", gg.TYPE_FLOAT)
   gg.clearResults()
-  gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("1F;-8.6457681e12F;15F;28F;16F;26F;8F;18F:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("15.0F;28.0F;16.0F;26.0F;8.0F;18.0F:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(500)
-  gg.editAll("70", gg.TYPE_FLOAT)
-  gg.clearResults()
   gg.toast("New MAGIC BULLET HEADSHOT 90% ACtivated")
 end
   
