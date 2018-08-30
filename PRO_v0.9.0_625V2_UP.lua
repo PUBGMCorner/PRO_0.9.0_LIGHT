@@ -1,221 +1,4 @@
-gg.alert(os.date([[
-❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
 
-Today: %Y/%m/%d Time: %H:%M:%S
-www.youtube.com/c/PUBGMCorner
-
-❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
-]]))
-
-gg.alert([[
-	
-❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
-
-
-  🛡️PLEASE ENTER YOUR SECRET VVIP ID🛡️
-
-
-❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
-]])
-pass = "XXX"
-prompt = gg.prompt({
-  " ⚔️🛡️ PLEASE ENTER VVIP ID 🛡️⚔️"
-}, {
-  [1] = 0
-}, {
-  [1] = "number"
-})
-function right()
-  gg.alert("⚔️🛡️  VERIFIED!  🛡️⚔️")
-end
-function wrong()
-  gg.alert("❌  REJECTED  ❌")
-  os.exit()
-end
-if prompt[1] == pass then
-  right()
-else
-  wrong()
-end
-HOME = 1
-
-function HOME()
-    HM = gg.multiChoice({
-	"🔴 ONE CLICK LANDED 🔴",
-	"🔘 HEADSHOT 1C LOBBY 🔘",
-	"⭕ BARBAR 1C LOBBY ⭕",
-        "🔹 FIRING RATE AKM 🔹",
-        "🔹 FIRING RATE M416 🔹",
-	"🔹 FIRING RATE SCAR-L 🔹",
-	"🔹 FIRING RATE ALL SMG 🔹",
-	"🔸 OFF SIT SCOPE 🔸",
-	"🔸 WALSHOT NEW AKM 🔸",
-	"🔺 SPEED HACK LOBBY 🔺",
-	"🔺 OFF SPEED HACK LOBBY 🔺",
-	"🔷 JEEP SPEED+SUBMARINE 🔷",
-	"🔹 SMALL CROSS HAIR 🔹",
-	"ℹ️ Info & Update Log ℹ️",
-    "❎ EXIT ❎",
-    "☎️ CONTACT US ☎️"
-  }, nil, [[
-❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
-                   💠 PUBGMS V 0.9.0 LIGHT 💠
-       🇮🇩 MODED BY : @KopralDjonoPUBGMC 🇮🇩
-        💠 PRO VERSION SNAPDRAGON 625 💠
-❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌ ]])
-  if HM == nil then
-  else
-  if HM[1] == true then
-      OCL()
-  end
-  if HM[2] == true then
-      H1CL()
-  end
-  if HM[3] == true then
-    B1CL()
-  end
-  if HM[4] == true then
-    FAKM()
-  end
-    if HM[5] == true then
-    FM4()
-  end
-    if HM[6] == true then
-    FSC()
-  end
-    if HM[7] == true then
-    FSMG()
-  end
-  if HM[8] == true then
-    ON()
-  end
-  if HM[9] == true then
-	WALL()
-  end
-  if HM[10] == true then
-   SPEED()
-   end
-   if HM[11] == true then
-   OFFSPEED()
-   end
-  if HM[12] == true then
-   JEEP()
-  end  
-   if HM[13] == true then
-   CROSS()
-  end
-  if HM[14] == true then
-    INFO()
-  end
-  if HM[15] == true then
-    EXIT()
-  end
-  if HM[16] == true then
-    MC()
-  end
-  HOMEDM = -1
-    end
-  end
-
-
-function OCL()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("4.814603e21;3.5032462e-44;3.7615819e-37;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(30)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("-5.5693206e-40;4.814603e21;3.7615819e-37;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(30)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("5.1848043e-44;-1.0285578e-38;3.7615819e-37;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(30)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("304.00009155273;3.7615819e-37;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(30)
-  gg.editAll("120", gg.TYPE_FLOAT)
-  gg.toast("Wallhack SD 625 V2 Aktif")
-	
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("32,769;-2,134,900,722", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("32769", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(10)
-  gg.editAll("32777", gg.TYPE_DWORD)
-  gg.toast("Body Green Activated")
-
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.clearResults()
-  gg.searchNumber("100F;1F;1,008,981,770D:99", gg.TYPE_FLOAT, false, gg.SING_EQUAL, 0, -1)
-  gg.searchNumber("100", gg.TYPE_FLOAT, false, gg.SING_EQUAL, 0, -1)
-  gg.getResults(100)
-  gg.editAll("-99", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.toast("Dark Sky Activated")
-
-
-  
-gg.clearResults()
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("1,092,081,726;1,003,658,240;923,795,456", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("1,092,081,726", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(50)
-gg.editAll("1,135,081,726", gg.TYPE_DWORD)
-gg.clearResults()
-  gg.toast("Sit On Scope Activated")  
-end
-
-
-
-function H1CL()
-  gg.clearResults()
-  gg.searchNumber("1868784978;1850305641;28518", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("1868784978", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(1000)
-  gg.editAll("1868756421", gg.TYPE_DWORD)
-  gg.clearResults()
-  gg.searchNumber("1750294898;1415932769;1819307365", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("1750294898;1415932769;1819307365", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(1000)
-  gg.editAll("100000", gg.TYPE_DWORD)
-  gg.clearResults()
-  gg.toast("No Recoil All Gun Activated")
-  
- gg.setRanges(gg.REGION_BAD)
-  gg.searchNumber("-88.66608428955;26:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("26", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(2)
-  gg.editAll("-460", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.searchNumber("-88.73961639404;28:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(2)
-  gg.editAll("-560", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("9.201618;30.5;25", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(10)
-  gg.editAll("999", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_C_BSS)
-  gg.searchNumber("2048D;1F", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(100)
-  gg.editAll("0.07", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("New Headshot V2 Aktif")
-  
   gg.clearRgg.alert(os.date([[
 ❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
 
@@ -290,7 +73,7 @@ function HOME()
     "☎️ CONTACT US ☎️"
   }, nil, [[
 ❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
-                   💠 PUBGMS V 0.9.0 LIGHT 💠
+                   💠 PUBGMS V 0.9.1 LIGHT 💠
        🇮🇩 MODED BY : @KopralDjonoPUBGMC 🇮🇩
         💠 PRO VERSION SNAPDRAGON 625 💠
 ❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌ ]])
@@ -443,8 +226,6 @@ function H1CL()
   gg.getResults(100)
   gg.editAll("0.07", gg.TYPE_FLOAT)
   gg.clearResults()
-  gg.toast("New Headshot 90% ACtivated")
-  
   gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
   gg.searchNumber("1F;-8.6457681e12F;15F;28F;16F;26F;8F;18F:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -452,7 +233,7 @@ function H1CL()
   gg.getResults(500)
   gg.editAll("70", gg.TYPE_FLOAT)
   gg.clearResults()
-  gg.toast("Magic Bullet Pro V[2] Activated")
+  gg.toast("New MAGIC BULLET HEADSHOT 90% ACtivated")
 end
   
 function B1CL()
