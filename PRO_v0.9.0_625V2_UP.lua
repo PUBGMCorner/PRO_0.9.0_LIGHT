@@ -61,7 +61,7 @@ function HOME()
         "🔹 FIRING RATE AKM 🔹",
         "🔹 FIRING RATE M416 🔹",
 	"🔹 FIRING RATE SCAR-L 🔹",
-	"🔹 FIRING RATE ALL SMG 🔹",
+	"🔹 NO RECOIL NO SPREAD 🔹",
 	"🔸 OFF SIT SCOPE 🔸",
 	"🔸 WALSHOT NEW AKM 🔸",
 	"🔺 SPEED HACK 🔺",
@@ -298,14 +298,29 @@ gg.editAll("0.02800000022", gg.TYPE_FLOAT)
 gg.toast('Speed SCAR-L Activated')
 end
 function FSMG()
-  gg.toast("Coding Firing Rate All SMG. . .")
-  gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("40000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(800)
-  gg.editAll("500000", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("Firing Rate ALL SMG Activated")
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("50;200;0.5;40.0;0.3:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.3", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(20)
+gg.editAll("300", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("1;10000D;100000:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(200)
+gg.editAll("0.001", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.setVisible(false)
+gg.searchNumber("0.2~0.3;53;30;1::", gg.TYPE_FLOAT)
+gg.setVisible(false)
+gg.searchNumber("0.2~0.3;1::", gg.TYPE_FLOAT)
+gg.getResults(200)
+gg.editAll("1.4012985e-45", gg.TYPE_FLOAT)
+gg.toast("No recoil Versio 0.8.0 Done")
+gg.setVisible(false)
+gg.clearResults()
+gg.setVisible(false)
 end
 
 function OFF()
