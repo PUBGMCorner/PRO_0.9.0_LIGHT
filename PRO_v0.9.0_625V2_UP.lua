@@ -61,11 +61,11 @@ function HOME()
         "🔹 FIRING RATE AKM 🔹",
         "🔹 FIRING RATE M416 🔹",
 	"🔹 FIRING RATE SCAR-L 🔹",
-	"🔹 NO RECOIL NO SPREAD 🔹",
-	"🔸 OFF SIT SCOPE 🔸",
+	"💠 HIGH JUMP 💠",
+	"⚫ OFF HIGH JUMP ⚫",
 	"🔸 WALSHOT NEW AKM 🔸",
 	"🔺 SPEED HACK 🔺",
-	"🔺 OFF SPEED HACK 🔺",
+	"⚫ OFF SPEED HACK ⚫",
 	"🔷 JEEP SPEED+SUBMARINE 🔷",
 	"🔹 SMALL CROSS HAIR 🔹",
 	"ℹ️ Info & Update Log ℹ️",
@@ -314,24 +314,25 @@ gg.editAll("0.02800000022", gg.TYPE_FLOAT)
 gg.toast('Speed SCAR-L Activated')
 end
 function FSMG()
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("1;10000D;100000:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(200)
-gg.editAll("0.001", gg.TYPE_FLOAT)
-gg.clearResults()
-
+  gg.clearResults(850)
+  gg.toast("Loading...")
+  gg.searchNumber("1;35;443;0.5;55;0.57357645035", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(850)
+  print("Replaced: ", gg.editAll("0.75", gg.TYPE_FLOAT))
+  gg.clearResults(850)
+  gg.toast("High Jump has been active")
 end
 
 function OFF()
-  gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("1,150,081,726;1,003,658,240;923,795,456", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("1,150,081,726", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(100)
-  gg.editAll("1,092,081,726", gg.TYPE_DWORD)
-  gg.clearResults()
-  gg.toast("Sit On Scope Turned Off")
+    gg.clearResults(850)
+  gg.toast("Loading...")
+  gg.searchNumber("0.75;35;443;0.5;55;0.57357645035", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("0.75", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(850)
+  print("Replaced: ", gg.editAll("1", gg.TYPE_FLOAT))
+  gg.clearResults(850)
+  gg.toast("High Jump has been de-actived")
 end
 function WALL()
   gg.clearResults()
