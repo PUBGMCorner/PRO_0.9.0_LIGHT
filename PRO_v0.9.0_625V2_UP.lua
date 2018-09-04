@@ -61,11 +61,11 @@ function HOME()
         "🔹 FIRING RATE AKM 🔹",
         "🔹 FIRING RATE M416 🔹",
 	"🔹 FIRING RATE SCAR-L 🔹",
-	"💠 THE FLASH 💠",
-	"⚫ OFF THE FLASH ⚫",
+	"💠 SUPER SPEED HACK 💠",
+	"⚫ OFF SUPER SPEEDHACK ⚫",
 	"🔸 WALSHOT NEW AKM 🔸",
-	"🔺 SPEED HACK 🔺",
-	"⚫ OFF SPEED HACK ⚫",
+	"🔺 THE FLASH 🔺",
+	"⚫ OFF THE FLASH ⚫",
 	"🔷 JEEP SPEED+SUBMARINE 🔷",
 	"🔹 SMALL CROSS HAIR 🔹",
 	"ℹ️ Info & Update Log ℹ️",
@@ -315,23 +315,23 @@ gg.editAll("0.02800000022", gg.TYPE_FLOAT)
 gg.toast('Speed SCAR-L Activated')
 end
 function FSMG()
-  gg.setRanges(gg.REGION_ANONYMOUS)
   gg.clearResults()
-  gg.searchNumber("-1,082,130,432D;1,120,403,456D;1.0F;1,040,187,392D::45", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(20)
-  gg.editAll("3", gg.TYPE_FLOAT)
-  gg.toast("MLAYUO COK")
+  gg.setRanges(gg.REGION_CODE_APP)
+  gg.searchNumber("10.90734863281;0.00999999978", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("10.90734863281", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(300)
+  gg.editAll("10.3111", gg.TYPE_FLOAT)
+  gg.toast("SPEED HACK ACTIVATED")
 end
 
 function OFF()
-  gg.setRanges(gg.REGION_ANONYMOUS)
   gg.clearResults()
-  gg.searchNumber("-1,082,130,432D;1,120,403,456D;1.0F;3,040,187,392D::45", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("3", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(20)
-  gg.editAll("1", gg.TYPE_FLOAT)
-  gg.toast("THE FLASH DEACTIVATED")
+  gg.setRanges(gg.REGION_CODE_APP)
+  gg.searchNumber("10.3111;0.00999999978", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("10.3111", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(300)
+  gg.editAll("10.3111", gg.TYPE_FLOAT)
+  gg.toast("SPEED HACK DEACTIVATED")
 end
 function WALL()
   gg.clearResults()
@@ -352,20 +352,20 @@ function SPEED()
   gg.searchNumber("1,120,403,456D;1.0F;1,040,187,392D::45", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.getResults(20)
-  gg.editAll("1.6", gg.TYPE_FLOAT)
+  gg.editAll("2.5", gg.TYPE_FLOAT)
   gg.clearResults()
-  gg.toast("Speed Hack Activated")
+  gg.toast("THE FLASH Activated")
 end
 
 function OFFSPEED()
   gg.setRanges(gg.REGION_ANONYMOUS)
   gg.clearResults()
-  gg.searchNumber("1.6,120,403,456D;1.5F;1,040,187,392D::45", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("1.6", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2.5,120,403,456D;1.5F;1,040,187,392D::45", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.getResults(20)
   gg.editAll("1", gg.TYPE_FLOAT)
   gg.clearResults()
-  gg.toast("Speed Hack De-Activated")
+  gg.toast("THE FLASH De-Activated")
 end
 
 function JEEP()
