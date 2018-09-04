@@ -61,11 +61,11 @@ function HOME()
         "🔹 FIRING RATE AKM 🔹",
         "🔹 FIRING RATE M416 🔹",
 	"🔹 FIRING RATE SCAR-L 🔹",
-	"🔹 FIRING RATE ALL SMG 🔹",
-	"🔸 OFF SIT SCOPE 🔸",
+	"🔹 SUPER SPEED HACK 🔹",
+	"🔸 OFF SUPER SPEEDHACK 🔸",
 	"🔸 WALSHOT NEW AKM 🔸",
-	"🔺 SPEED HACK LOBBY 🔺",
-	"🔺 OFF SPEED HACK LOBBY 🔺",
+	"🔺 THE FLASH 🔺",
+	"🔺 OFF THE FLASH 🔺",
 	"🔷 JEEP SPEED+SUBMARINE 🔷",
 	"🔹 SMALL CROSS HAIR 🔹",
 	"ℹ️ Info & Update Log ℹ️",
@@ -312,25 +312,23 @@ gg.editAll("0.02800000022", gg.TYPE_FLOAT)
 gg.toast('Speed SCAR-L Activated')
 end
 function FSMG()
-  gg.toast("Coding Firing Rate All SMG. . .")
   gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("40000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(800)
-  gg.editAll("500000", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("Firing Rate ALL SMG Activated")
+  gg.setRanges(gg.REGION_CODE_APP)
+  gg.searchNumber("10.90734863281;0.00999999978", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("10.90734863281", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(300)
+  gg.editAll("10.3111", gg.TYPE_FLOAT)
+  gg.toast("SPEED HACK ACTIVATED")
 end
 
 function OFF()
   gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("1,150,081,726;1,003,658,240;923,795,456", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("1,150,081,726", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(100)
-  gg.editAll("1,092,081,726", gg.TYPE_DWORD)
-  gg.clearResults()
-  gg.toast("Sit On Scope Turned Off")
+  gg.setRanges(gg.REGION_CODE_APP)
+  gg.searchNumber("10.3111;0.00999999978", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("10.3111", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(300)
+  gg.editAll("10.90734863281", gg.TYPE_FLOAT)
+  gg.toast("SPEED HACK DEACTIVATED")
 end
 function WALL()
   gg.clearResults()
@@ -351,7 +349,7 @@ function SPEED()
   gg.searchNumber("1,120,403,456D;1.0F;1,040,187,392D::45", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.getResults(20)
-  gg.editAll("1.4", gg.TYPE_FLOAT)
+  gg.editAll("2", gg.TYPE_FLOAT)
   gg.clearResults()
   gg.toast("Speed Hack Activated")
 end
@@ -359,8 +357,8 @@ end
 function OFFSPEED()
   gg.setRanges(gg.REGION_ANONYMOUS)
   gg.clearResults()
-  gg.searchNumber("1,120,403,456D;1.4F;1,040,187,392D::45", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("1.4", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2,120,403,456D;1.0F;1,040,187,392D::45", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.getResults(20)
   gg.editAll("1", gg.TYPE_FLOAT)
   gg.clearResults()
