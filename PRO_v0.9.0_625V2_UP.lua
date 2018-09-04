@@ -61,8 +61,8 @@ function HOME()
         "🔹 FIRING RATE AKM 🔹",
         "🔹 FIRING RATE M416 🔹",
 	"🔹 FIRING RATE SCAR-L 🔹",
-	"💠 HIGH JUMP 💠",
-	"⚫ OFF HIGH JUMP ⚫",
+	"💠 THE FLASH 💠",
+	"⚫ OFF THE FLASH ⚫",
 	"🔸 WALSHOT NEW AKM 🔸",
 	"🔺 SPEED HACK 🔺",
 	"⚫ OFF SPEED HACK ⚫",
@@ -315,25 +315,23 @@ gg.editAll("0.02800000022", gg.TYPE_FLOAT)
 gg.toast('Speed SCAR-L Activated')
 end
 function FSMG()
-  gg.clearResults(850)
-  gg.toast("Loading...")
-  gg.searchNumber("1;35;443;0.5;55;0.57357645035", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.clearResults()
+  gg.searchNumber("-1,082,130,432D;1,120,403,456D;1.0F;1,040,187,392D::45", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(850)
-  print("Replaced: ", gg.editAll("0.3", gg.TYPE_FLOAT))
-  gg.clearResults(850)
-  gg.toast("High Jump has been active")
+  gg.getResults(20)
+  gg.editAll("3", gg.TYPE_FLOAT)
+  gg.toast("MLAYUO COK")
 end
 
 function OFF()
-    gg.clearResults(850)
-  gg.toast("Loading...")
-  gg.searchNumber("0.3;35;443;0.5;55;0.57357645035", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("0.3", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(850)
-  print("Replaced: ", gg.editAll("1", gg.TYPE_FLOAT))
-  gg.clearResults(850)
-  gg.toast("High Jump has been de-actived")
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.clearResults()
+  gg.searchNumber("-1,082,130,432D;1,120,403,456D;1.0F;3,040,187,392D::45", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("3", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(20)
+  gg.editAll("1", gg.TYPE_FLOAT)
+  gg.toast("THE FLASH DEACTIVATED")
 end
 function WALL()
   gg.clearResults()
