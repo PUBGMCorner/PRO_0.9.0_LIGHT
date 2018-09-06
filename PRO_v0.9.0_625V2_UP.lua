@@ -320,7 +320,7 @@ function FSMG()
   gg.searchNumber("10.90734863281;0.00999999978", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.searchNumber("10.90734863281", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.getResults(300)
-  gg.editAll("10.6", gg.TYPE_FLOAT)
+  gg.editAll("10.55", gg.TYPE_FLOAT)
   gg.toast("SPEED HACK ACTIVATED")
 end
 
