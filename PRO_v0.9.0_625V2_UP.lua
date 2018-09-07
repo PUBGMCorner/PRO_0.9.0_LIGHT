@@ -101,7 +101,7 @@ function HOME()
     FSMG()
   end
   if HM[8] == true then
-    ON()
+    PRONE()
   end
   if HM[9] == true then
 	WALL()
@@ -324,7 +324,7 @@ function FSMG()
   gg.toast("SPEED HACK ACTIVATED")
 end
 
-function OFF()
+function PRONE()
   gg.toast("Loading ⌛")
   gg.setVisible(false)
   gg.clearResults()
