@@ -325,7 +325,7 @@ function PRONE()
   gg.searchNumber("1,092,081,726", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
   gg.setVisible(false)
   gg.getResults(100)
-  gg.editAll("1,135,081,726", gg.TYPE_DWORD)
+  gg.editAll("1,150,081,726", gg.TYPE_DWORD)
   gg.clearResults()
   gg.toast("PRONE SCOPE ON")
 end
