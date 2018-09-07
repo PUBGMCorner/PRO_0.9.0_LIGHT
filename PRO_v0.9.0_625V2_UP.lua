@@ -62,7 +62,7 @@ function HOME()
         "🔹 FIRING RATE M416 🔹",
 	"🔹 FIRING RATE SCAR-L 🔹",
 	"💠 SUPER SPEED HACK 💠",
-	"⚫ OFF SUPER SPEEDHACK ⚫",
+	"⚫ PRONE SCOPE ON ⚫",
 	"🔸 WALSHOT NEW AKM 🔸",
 	"🔺 THE FLASH 🔺",
 	"⚫ OFF THE FLASH ⚫",
@@ -326,7 +326,18 @@ function FSMG()
 end
 
 function OFF()
-  gg.clearResults()
+  gg.toast("Loading ⌛")
+gg.setVisible(false)
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("1,092,081,726;1,003,658,240;923,795,456", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.setVisible(false)
+gg.searchNumber("1,092,081,726", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.setVisible(false)
+gg.getResults(100)
+gg.editAll("1,155,081,726", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("PRONE SCOPE ON").clearResults()
   gg.setRanges(gg.REGION_CODE_APP)
   gg.searchNumber("10.2;0.00999999978", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.searchNumber("10.2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
