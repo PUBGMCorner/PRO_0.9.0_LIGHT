@@ -336,7 +336,7 @@ function OFF()
   gg.getResults(100)
   gg.editAll("1,155,081,726", gg.TYPE_DWORD)
   gg.clearResults()
-  gg.toast("PRONE SCOPE ON").clearResults()
+  gg.toast("PRONE SCOPE ON")
 end
 
 function WALL()
