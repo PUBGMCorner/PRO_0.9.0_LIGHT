@@ -167,8 +167,6 @@ function OCL()
   gg.editAll("32777", gg.TYPE_DWORD)
   gg.toast("Body Green Activated")
 
-
-	
   gg.clearResults()
   gg.setRanges(gg.REGION_BAD)
   gg.clearResults()
