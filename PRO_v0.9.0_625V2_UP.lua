@@ -167,14 +167,7 @@ function OCL()
   gg.editAll("32777", gg.TYPE_DWORD)
   gg.toast("Body Green Activated")
 
-  gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("1,092,081,726;1,003,658,240;923,795,456", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("1,092,081,726", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(50)
-  gg.editAll("1,135,081,726", gg.TYPE_DWORD)
-  gg.clearResults()
-  gg.toast("Sit On Scope Activated")  
+
 	
   gg.clearResults()
   gg.setRanges(gg.REGION_BAD)
