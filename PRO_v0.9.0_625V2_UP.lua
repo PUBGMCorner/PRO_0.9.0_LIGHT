@@ -158,7 +158,8 @@ function OCL()
   gg.editAll("120", gg.TYPE_FLOAT)
   gg.toast("Wallhack SD 625 V2 Aktif")
 	
- gg.setRanges(gg.REGION_BAD)
+ 
+gg.setRanges(gg.REGION_BAD)
 gg.clearResults()
 gg.searchNumber("1,661,337,615D;8,200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
