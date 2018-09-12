@@ -56,16 +56,16 @@ gg.alert([[
 function HOME()
     HM = gg.multiChoice({
 	"🔴 ONE CLICK LANDED 🔴",
-	"🔘 HEADSHOT 1C LOBBY 🔘",
-	"🔹 WH SD 625+ BETA 🔹",
+	"🔘 HEADSHOT + AIMBOT LOBBY 🔘",
+	"🔹 WH SD 625+ LOBBY 🔹",
         "🔹 FIRING RATE AKM 🔹",
         "🔹 FIRING RATE M416 🔹",
 	"🔹 FIRING RATE SCAR-L 🔹",
-	"💠 MICRO SPEED HACK 💠",
+	"💠 MEDIUM SPEED HACK 💠",
 	"⚫ NO RECOIL LANDED GOT GUN ⚫",
-	"🔸 WALSHOT NEW 🔸",
-	"🔺 THE FLASH 🔺",
-	"⚫ OFF THE FLASH ⚫",
+	"🔸 AIMBOT 🔸",
+	"🔺 SIT SCOPE 🔺",
+	"⚫ OFF SIT SCOPE ⚫",
 	"🔷 JEEP SPEED+SUBMARINE 🔷",
 	"🔹 SMALL CROSS HAIR 🔹",
 	"🔹 ANTENA 🔹",
@@ -107,13 +107,13 @@ function HOME()
     NOREC()
   end
   if HM[9] == true then
-	WALL()
+	AIMBOT()
   end
   if HM[10] == true then
-   SPEED()
+   SITSCOPE()
    end
    if HM[11] == true then
-   OFFSPEED()
+   OFFSITSCOPE()
    end
   if HM[12] == true then
    JEEP()
@@ -144,65 +144,32 @@ function HOME()
   end
 
 
-function OCL()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.clearResults()
-  gg.searchNumber("1,120,403,456D;1.0F;1,040,187,392D::45", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(20)
-  gg.editAll("1.7", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("THE FLASH Activated")
-  
-  gg.toast("Loading ⌛")
-  gg.setVisible(false)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("1,092,081,726;1,003,658,240;923,795,456", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.setVisible(false)
-  gg.searchNumber("1,092,081,726", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.setVisible(false)
-  gg.getResults(100)
-  gg.editAll("1,135,081,726", gg.TYPE_DWORD)
-  gg.clearResults()
-  gg.toast("SIT SCOPE ON")
-	
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("8.0F;1.20000004768F;0.80000001192F;1.5F;0.80000001192F;1.5F::512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("8.0", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(300)
-gg.editAll("0", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.toast("NO GRASS ACTIVATED")
-
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("100F;1F;1,008,981,770D:99", gg.TYPE_FLOAT, false, gg.SING_EQUAL, 0, -1)
-gg.searchNumber("100", gg.TYPE_FLOAT, false, gg.SING_EQUAL, 0, -1)
-gg.getResults(100)
-gg.editAll("-9999", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.toast("BLACK SKY ACTIVATED")
+function OCL()  
+gg.alert([[
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+COOMING SOON BROTHER BARBARKU
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+  ]])
 end
 
 
 
 function H1CL()
   gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("3.5F;1F;1F;1F;200F;20F:512", gg.TYPE_DWORD, false, gg.SING_EQUAL, 0, -1)
-  gg.searchNumber("200", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(850)
-  gg.editAll("9999", gg.TYPE_FLOAT)
+  gg.searchNumber("999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("3.5F;1F;1F;1F;9999F;20F:512", gg.TYPE_DWORD, false, gg.SING_EQUAL, 0, -1)
-  gg.searchNumber("3.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(850)
-  gg.editAll("-9999", gg.TYPE_FLOAT)
+  gg.searchNumber("3.5;1;200;20::999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("3.5;1;200;20", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(300)
+  gg.editAll("-1.0e10", gg.TYPE_FLOAT)
   gg.clearResults()
-  gg.toast("Average Aimbot Activated")
- 
- 
+  gg.toast("AIMBOT ACTIVATED")
+
  gg.setRanges(gg.REGION_BAD)
   gg.searchNumber("-88.66608428955;26:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.searchNumber("26", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -276,7 +243,7 @@ function FSMG()
   gg.searchNumber("10.90734863281;0.00999999978", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.searchNumber("10.90734863281", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.getResults(300)
-  gg.editAll("10.55", gg.TYPE_FLOAT)
+  gg.editAll("10.35", gg.TYPE_FLOAT)
   gg.toast("SPEED HACK ACTIVATED")
 end
 
@@ -306,39 +273,47 @@ gg.setVisible(false)
 gg.clearResults()
 end
 
-function WALL()
+function AIMBOT()
   gg.clearResults()
-  gg.setRanges(gg.REGION_C_BSS)
+  gg.searchNumber("999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.clearResults()
-  gg.searchNumber("869,711,765D;2;1::55", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(2)
-  gg.editAll("-10", gg.TYPE_FLOAT)
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("3.5;1;200;20::999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("3.5;1;200;20", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(300)
+  gg.editAll("-1.0e10", gg.TYPE_FLOAT)
   gg.clearResults()
-  gg.toast("Neo WallShot Activated")
-  gg.clearResults()
+  gg.toast("AIMBOT ACTIVATED")
 end
 
-function SPEED()
+function SITSCOPE()
+  gg.toast("Loading ⌛")
+  gg.setVisible(false)
+  gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("1,092,081,726;1,003,658,240;923,795,456", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.setVisible(false)
+  gg.searchNumber("1,092,081,726", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.setVisible(false)
+  gg.getResults(100)
+  gg.editAll("1,135,081,726", gg.TYPE_DWORD)
   gg.clearResults()
-  gg.searchNumber("1,120,403,456D;1.0F;1,040,187,392D::45", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(20)
-  gg.editAll("1.7", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("THE FLASH Activated")
+  gg.toast("SIT SCOPE ON")
 end
 
-function OFFSPEED()
+function OFFSITSCOPE()
+  gg.toast("Loading ⌛")
+  gg.setVisible(false)
+  gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("1,135,081,726;1,003,658,240;923,795,456", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.setVisible(false)
+  gg.searchNumber("1,135,081,726", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.setVisible(false)
+  gg.getResults(100)
+  gg.editAll("1,092,081,726", gg.TYPE_DWORD)
   gg.clearResults()
-  gg.searchNumber("1.7,120,403,456D;1.5F;1,040,187,392D::45", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("1.7", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(20)
-  gg.editAll("1", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("THE FLASH De-Activated")
+  gg.toast("SIT SCOPE OFF")
 end
 
 function JEEP()
