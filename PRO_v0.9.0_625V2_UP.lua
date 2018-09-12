@@ -87,7 +87,7 @@ function HOME()
       H1CL()
   end
   if HM[3] == true then
-    B1CL()
+    WH625()
   end
   if HM[4] == true then
     FAKM()
@@ -318,12 +318,6 @@ gg.searchNumber("1750294898;1415932769;1819307365", gg.TYPE_DWORD, false, gg.SIG
 gg.searchNumber("1750294898;1415932769;1819307365", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(1000)
 gg.editAll("100000", gg.TYPE_DWORD)
-gg.clearResults()
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("1;10000D;100000:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(200)
-gg.editAll("0.001", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.setVisible(false)
 gg.searchNumber("0.2~0.3;53;30;1::", gg.TYPE_FLOAT)
