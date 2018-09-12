@@ -137,17 +137,15 @@ function HOME()
 
 
 function OCL()
-  gg.clearResults()
-  gg.setRanges(gg.REGION_BAD)
-  gg.clearResults()
-  gg.searchNumber("100F;1F;1,008,981,770D:99", gg.TYPE_FLOAT, false, gg.SING_EQUAL, 0, -1)
-  gg.searchNumber("100", gg.TYPE_FLOAT, false, gg.SING_EQUAL, 0, -1)
-  gg.getResults(100)
-  gg.editAll("-99", gg.TYPE_FLOAT)
-  gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.toast("Dark Sky Activated")
-
+  gg.clearResults()
+  gg.searchNumber("1,120,403,456D;1.0F;1,040,187,392D::45", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(20)
+  gg.editAll("1.7", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("THE FLASH Activated")
+  
   gg.toast("Loading ⌛")
   gg.setVisible(false)
   gg.clearResults()
@@ -161,7 +159,21 @@ function OCL()
   gg.clearResults()
   gg.toast("SIT SCOPE ON")
 	
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("8.0F;1.20000004768F;0.80000001192F;1.5F;0.80000001192F;1.5F::512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("8.0", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(300)
+gg.editAll("0", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("NO GRASS ACTIVATED")
 
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("100F;1F;1,008,981,770D:99", gg.TYPE_FLOAT, false, gg.SING_EQUAL, 0, -1)
+gg.searchNumber("100", gg.TYPE_FLOAT, false, gg.SING_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("-9999", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("BLACK SKY ACTIVATED")
 end
 
 
