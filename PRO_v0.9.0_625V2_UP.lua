@@ -69,6 +69,8 @@ function HOME()
 	"🔷 JEEP SPEED+SUBMARINE 🔷",
 	"🔹 SMALL CROSS HAIR 🔹",
 	"🔹 ANTENA 🔹",
+	"🔴 BODY RED BALANCE 🔴",	
+	"🔴 BODY YELLOW BALANCE 🔴",	
 	"ℹ️ Info & Update Log ℹ️",
     "❎ EXIT ❎",
     "☎️ CONTACT US ☎️"
@@ -123,12 +125,18 @@ function HOME()
     ANTENNA()
   end
   if HM[15] == true then
-    INFO()
+    REDMED()
   end
   if HM[16] == true then
-    EXIT()
+    YELLOWMED()
   end
   if HM[17] == true then
+    INFO()
+  end
+  if HM[18] == true then
+    EXIT()
+  end
+  if HM[19] == true then
     MC()
   end
   HOMEDM = -1
@@ -219,15 +227,6 @@ function H1CL()
   gg.editAll("0.07", gg.TYPE_FLOAT)
   gg.clearResults()
   gg.toast("New MAGIC BULLET HEADSHOT 90% ACtivated")
-  
-gg.searchNumber(' 573.70306396484;0.05499718338;1 ', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1) 
-gg.searchNumber('1', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1) 
-gg.getResults(5000) 
-gg.editAll('999', gg.TYPE_FLOAT)
-gg.toast(PUBGMS)
-gg.clearResults(5000)
-gg.clearResults()
-gg.toast("WHITE BODY ACTIVATED")
 end
   
 function WH625()
@@ -404,6 +403,27 @@ gg.editAll("99999",16)
 gg.clearResults()
 gg.toast("Successful Activation")
 end
+
+function REDMED()
+gg.setRanges(gg.REGION_BAD)
+gg.clearResults()
+gg.searchNumber("1,661,337,615D;8,200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("7", gg.TYPE_DWORD)
+gg.toast("Merah Set Medium")
+gg.clearResults()
+end
+function YELLOWMED()
+gg.setRanges(gg.REGION_BAD)
+gg.clearResults()
+gg.searchNumber("1,661,337,615D;8,200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("6", gg.TYPE_DWORD)
+gg.toast("Kuning Set Medium")
+gg.clearResults()
+end
 function INFO()
 gg.alert([[
 	❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
@@ -548,31 +568,4 @@ while true do
     HOME()
   end
   end
-gg.setRanges(gg.REGION_BAD)
-gg.clearResults()
-gg.searchNumber("1,661,337,615D;8,200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(30)
-gg.editAll("6", gg.TYPE_DWORD)
-gg.toast("Kuning Set Medium")
-gg.clearResults()
 
-gg.setRanges(gg.REGION_BAD)
-gg.clearResults()
-gg.searchNumber("1,661,337,615D;8,200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(30)
-gg.editAll("7", gg.TYPE_DWORD)
-gg.toast("Merah Set Medium")
-gg.clearResults()
-end
-
-function hitam()
-gg.setRanges(gg.REGION_BAD)
-gg.clearResults()
-gg.searchNumber("1,661,337,615D;8,200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(30)
-gg.editAll("-999", gg.TYPE_DWORD)
-gg.toast("hitam Set Medium")
-gg.clearResults()
