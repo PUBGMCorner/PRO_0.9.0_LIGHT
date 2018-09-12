@@ -548,3 +548,31 @@ while true do
     HOME()
   end
   end
+gg.setRanges(gg.REGION_BAD)
+gg.clearResults()
+gg.searchNumber("1,661,337,615D;8,200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("6", gg.TYPE_DWORD)
+gg.toast("Kuning Set Medium")
+gg.clearResults()
+
+gg.setRanges(gg.REGION_BAD)
+gg.clearResults()
+gg.searchNumber("1,661,337,615D;8,200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("7", gg.TYPE_DWORD)
+gg.toast("Merah Set Medium")
+gg.clearResults()
+end
+
+function hitam()
+gg.setRanges(gg.REGION_BAD)
+gg.clearResults()
+gg.searchNumber("1,661,337,615D;8,200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("8200", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(30)
+gg.editAll("-999", gg.TYPE_DWORD)
+gg.toast("hitam Set Medium")
+gg.clearResults()
