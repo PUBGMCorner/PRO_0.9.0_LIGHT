@@ -257,7 +257,7 @@ function WALLHACK1()
     gg.toast("WALLHACK ALL SNAPDRAGON V1 ACTIVATED")
 end
 
-function WH1()
+function WALLHACK2()
   gg.clearResults()
   gg.setRanges(gg.REGION_BAD)
   gg.searchNumber("4,140D;4.7408166e21;5.6896623e-29;4.7961574e21;3.7615819e-37;2:", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -302,7 +302,7 @@ function WH1()
   gg.toast("WALLHACK ALL SNAPDRAGON V2 ACTIVATED")
 end
 
-function WH3()
+function WALLHACK3()
   gg.clearResults()
   gg.setRanges(gg.REGION_BAD)
   gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;0.00999999978F::200", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
