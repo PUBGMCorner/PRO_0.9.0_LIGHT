@@ -146,7 +146,7 @@ function WHCL()
   if WH8 == nil then
   else
     if WH8[1] == true then
-      WH0080()
+      WHNEW()
     end
     if WH8[2] == true then
       GREEN()
@@ -216,25 +216,25 @@ function WHITE()
   gg.editAll("9999", gg.TYPE_FLOAT)
   gg.toast("BODY WHITE ACTIVATED")
 end
-function WH080()  
-  WHCK = gg.multiChoice({
+function WHNEW()  
+  WHBARU = gg.multiChoice({
     "WH ALL SD V1",
     "WH ALL SD V2",
     "WH ALL SD V3",
     "BACK"
   }, nil, " WALL HACK MENU ")
-  if WHCK == nil then
+  if WHBARU == nil then
   else
-    if WHCK[1] == true then
+    if WHBARU[1] == true then
       WALLHACK1()
     end
-    if WHCK[2] == true then
+    if WHBARU[2] == true then
       WALLHACK2()
     end
-    if WHCK[3] == true then
+    if WHBARU[3] == true then
       WALLHACK3()
     end
-    if WHCK[4] == true then
+    if WHBARU[4] == true then
       WHCL()
     end
   end
