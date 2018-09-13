@@ -55,22 +55,20 @@ gg.alert([[
 
 function HOME()
     HM = gg.multiChoice({
-	"🔴 ONE CLICK LANDED 🔴",
-	"🔘 HEADSHOT + AIMBOT LOBBY 🔘",
-	"🔹 WH SD 625+ LOBBY 🔹",
-        "🔹 FIRING RATE AKM 🔹",
-        "🔹 FIRING RATE M416 🔹",
-	"🔹 FIRING RATE SCAR-L 🔹",
-	"💠 MEDIUM SPEED HACK 💠",
-	"⚫ NO RECOIL LANDED GOT GUN ⚫",
-	"🔸 AIMBOT 🔸",
+	"🔴 WALL HACK & COLOUR 🔴",
+	"🔘 HEADSHOT 95% LOBBY 🔘",
+	"🔹 ⚫ NO RECOIL LANDED ⚫🔹",
 	"🔺 SIT SCOPE 🔺",
 	"⚫ OFF SIT SCOPE ⚫",
-	"🔷 JEEP SPEED+SUBMARINE 🔷",
-	"🔹 SMALL CROSS HAIR 🔹",
+	"💠 MEDIUM SPEED HACK 💠",
 	"🔹 ANTENA 🔹",
-	"🔴 BODY RED BALANCE 🔴",	
-	"🔴 BODY YELLOW BALANCE 🔴",	
+    "🔹 FIRING RATE AKM 🔹",
+    "🔹 FIRING RATE M416 🔹",
+	"🔹 FIRING RATE SCAR-L 🔹",
+	"⚫ GOD MODE NO DEAD ⚫",
+	"🔸 AIMBOT [beta] 🔸",
+	"🔷 JEEP SPEED+SUBMARINE 🔷",
+	"🔹 SMALL CROSS HAIR 🔹",	
 	"ℹ️ Info & Update Log ℹ️",
     "❎ EXIT ❎",
     "☎️ CONTACT US ☎️"
@@ -83,93 +81,255 @@ function HOME()
   if HM == nil then
   else
   if HM[1] == true then
-      OCL()
+      WHCL()
   end
   if HM[2] == true then
       H1CL()
   end
   if HM[3] == true then
-    WH625()
-  end
-  if HM[4] == true then
-    FAKM()
-  end
-    if HM[5] == true then
-    FM4()
-  end
-    if HM[6] == true then
-    FSC()
-  end
-    if HM[7] == true then
-    FSMG()
-  end
-  if HM[8] == true then
     NOREC()
   end
-  if HM[9] == true then
-	AIMBOT()
+  if HM[4] == true then
+    SITSCOPE()
   end
-  if HM[10] == true then
-   SITSCOPE()
-   end
-   if HM[11] == true then
-   OFFSITSCOPE()
-   end
-  if HM[12] == true then
-   JEEP()
-  end  
-   if HM[13] == true then
-   CROSS()
+    if HM[5] == true then
+    OFFSITSCOPE()
   end
-  if HM[14] == true then
+    if HM[6] == true then
+    SPEEDHACKMED()
+  end
+    if HM[7] == true then
     ANTENNA()
   end
+  if HM[8] == true then
+    FAKM()
+  end
+  if HM[9] == true then
+	FM4()
+  end
+  if HM[10] == true then
+   FSC()
+   end
+   if HM[11] == true then
+   GODMODE()
+   end
+  if HM[12] == true then
+   AIMBOT()
+  end  
+   if HM[13] == true then
+   JEEP()
+  end
+  if HM[14] == true then
+   CROSS()
+  end
   if HM[15] == true then
-    REDMED()
-  end
-  if HM[16] == true then
-    YELLOWMED()
-  end
-  if HM[17] == true then
     INFO()
   end
-  if HM[18] == true then
+  if HM[16] == true then
     EXIT()
   end
-  if HM[19] == true then
+  if HM[17] == true then
     MC()
   end
   HOMEDM = -1
     end
   end
+function WHCL()  
+  WH8 = gg.multiChoice({
+    " NEW MENU WALLHACK 0.8.0 ",
+    " BODY GREEN ",
+    " BODY RED ",
+	" BODY YELLOW ",
+	" BODY WHITE GLOBAL ",
+    "BACK"
+  }, nil, " WALLHACK & COLOUR LOBBY ")
+  if WH8 == nil then
+  else
+    if WH8[1] == true then
+      WH0080()
+    end
+    if WH8[2] == true then
+      GREEN()
+    end
+    if WH8[3] == true then
+      RED()
+	    end
+    if WH8[4] == true then
+      YELLOW()
+    end
+    if WH8[5] == true then
+      WHITE()
+    end
+	if WH8[6] == true then
+      HOME()
+    end
+  end
+end
+function GREEN()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("69,778;1,669,332,992;11;536,887,297::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("11", gg.TYPE_DWORD, false)
+  gg.getResults(4)
+  gg.editAll("9", gg.TYPE_DWORD)
+  gg.toast("BODY GREEN ACTIVATED")
+  gg.clearResults()
+end
+function RED()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("1.8189894e-12;3;4.75926e21", 16, false, 536870912, 0, -1)
+  gg.searchNumber("3", 16, false, 536870912, 0, -1)
+  gg.getResults(10)
+  gg.editAll("400", 16)
+  gg.toast("BODY RED ACTIVATED")
+  gg.clearResults()
+end
+function YELLOW()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("1.8189894e-12;3;4.75926e21", 16, false, 536870912, 0, -1)
+  gg.searchNumber("3", 16, false, 536870912, 0, -1)
+  gg.getResults(10)
+  gg.editAll("400", 16)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("69,778;1,669,332,992;11;536,887,297::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("69778;11", gg.TYPE_DWORD, false)
+  gg.getResults(4)
+  gg.editAll("32777", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(131072)
+  gg.searchNumber("6.50000333786;1.1202013e-19;3.7615819e-37;2::", 16, false, 536870912, 0, -1)
+  gg.searchNumber("2", 16, false, 536870912, 0, -1)
+  gg.getResults(1)
+  gg.editAll("99999", 16)
+  gg.toast("BODY YELLOW ACTIVATED")
+  gg.clearResults()
+end
 
+function WHITE()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("0.05499718338;1.0", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("9999", gg.TYPE_FLOAT)
+  gg.toast("BODY WHITE ACTIVATED")
+end
+function WH080()  
+  WHCK = gg.multiChoice({
+    "WH ALL SD V1",
+    "WH ALL SD V2",
+    "WH ALL SD V3",
+    "BACK"
+  }, nil, " WALL HACK MENU ")
+  if WHCK == nil then
+  else
+    if WHCK[1] == true then
+      WALLHACK1()
+    end
+    if WHCK[2] == true then
+      WALLHACK2()
+    end
+    if WHCK[3] == true then
+      WALLHACK3()
+    end
+    if WHCK[4] == true then
+      WHCL()
+    end
+  end
+end
 
-function OCL()  
-gg.alert([[
-➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
-❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
-➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
-COOMING SOON BROTHER BARBARKU
-➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
-❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
-➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
-  ]])
+function WALLHACK1()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.clearResults()
+  gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;0.00999999978F::200", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(30)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.searchNumber("5.8013756e-42F;-5.5695588e-40F;2.0F::100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(30)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.clearResults()
+    gg.toast("WALLHACK ALL SNAPDRAGON V1 ACTIVATED")
+end
+
+function WH1()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("4,140D;4.7408166e21;5.6896623e-29;4.7961574e21;3.7615819e-37;2:", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(3)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.searchNumber("200,866D;0.24022650719;0.69314718246;0.00999999978;1;-1;2;-127:", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(2)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.searchNumber("32,770D;0.01799999923;0.29907226562;-1;2:", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(4)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.searchNumber("50,331,648D;0.01799999923;0.29907226562;0.5869140625;0.11401367188;-1;2:", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("-1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(2)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.searchNumber("50,331,648D;0.04000854492;0.11999511719;-0.02749633789;-0.57177734375;-1;2:", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("-1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(1)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.searchNumber("266,400D;0.24022650719;0.69314718246;0.00999999978;1;-1;-127;2:", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.searchNumber("50,331,648D;0.04000854492;0.11999511719;-0.02749633789;-0.57177734375;-1;2:", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(2)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.searchNumber("4,140D;4.7408149e21;-5.5695588e-40;4.814603e21;3.7615819e-37;2:", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(20)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.toast("WALLHACK ALL SNAPDRAGON V2 ACTIVATED")
+end
+
+function WH3()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;0.00999999978F::200", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(30)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("5.8013756e-42F;-5.5695588e-40F;2.0F::100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(30)
+  gg.editAll("120", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_BAD)
+  gg.searchNumber("9.2432029e-40;1.1079927e-39;2::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(15)
+  gg.editAll("100", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.searchNumber("2.25000166893;2.718519e-43;2::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
+  gg.editAll("100", gg.TYPE_FLOAT)
+  gg.toast("WALLHACK ALL SNAPDRAGON V3 ACTIVATED")
 end
 
 
 
 function H1CL()
-  gg.clearResults()
-  gg.searchNumber("999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("3.5;1;200;20::999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("3.5;1;200;20", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(300)
-  gg.editAll("-1.0e10", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.toast("AIMBOT ACTIVATED")
-
  gg.setRanges(gg.REGION_BAD)
   gg.searchNumber("-88.66608428955;26:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.searchNumber("26", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -193,22 +353,20 @@ function H1CL()
   gg.getResults(100)
   gg.editAll("0.07", gg.TYPE_FLOAT)
   gg.clearResults()
-  gg.toast("New MAGIC BULLET HEADSHOT 90% ACtivated")
+  gg.toast("New MAGIC BULLET HEADSHOT 95% ACtivated")
 end
   
-function WH625()
-gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.clearResults()
-gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;0.00999999978F::200", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(30)
-gg.editAll("120", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.searchNumber("5.8013756e-42F;-5.5695588e-40F;2.0F::100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(30)
-gg.editAll("120", gg.TYPE_FLOAT)
+function GODMODE()
+gg.alert([[
+	
+❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
+
+
+  🛡️you are not allowed🛡️
+
+
+❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
+]])
 end
 
 function FAKM()
@@ -237,7 +395,7 @@ gg.getResults(50)
 gg.editAll("0.02800000022", gg.TYPE_FLOAT)
 gg.toast('Speed SCAR-L Activated')
 end
-function FSMG()
+function SPEEDHACKMED()
   gg.clearResults()
   gg.setRanges(gg.REGION_CODE_APP)
   gg.searchNumber("10.90734863281;0.00999999978", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -268,7 +426,7 @@ gg.setVisible(false)
 gg.searchNumber("0.2~0.3;1::", gg.TYPE_FLOAT)
 gg.getResults(200)
 gg.editAll("1.4012985e-45", gg.TYPE_FLOAT)
-gg.toast("Successful Activation")
+gg.toast("NO RECOIL ACTIVATED")
 gg.setVisible(false)
 gg.clearResults()
 end
@@ -554,8 +712,3 @@ while true do
     HOME()
   end
   end
-
-
-
-
-
